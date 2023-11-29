@@ -6,10 +6,7 @@
              OOOO0   EEEEEEE  DDDDDD   AA   AA           
 
 > - [Функции](#Функции)
-> - [Obtain Capabilities](#Obtain_Capabilities)
-> - [Estabilish Accaunts](#Estabilish_Accaunts)
-> - [Deploy Container](#Deploy_Container)
-> - [Active Scanning](#Active_Scanning)
+> - [Компоненты](#Компоненты)
 > - [Библиотеки](#Библиотеки)
 > - [Как скачать](#Как_скачать)
 > - [Структура](#Структура)
@@ -26,44 +23,17 @@
   <li>✍️ Customizable</li>
 </ul>
 
-<a name="Obtain_Capabilities"></a>
-<h1>💻 Obtain Capabilities</h1>
-<details open>
-<br/>
-<br/>
-<summary>Showcase as Dialog</summary>
-<img src="docs/res/InfoSheet Dialog Cover TopStyle Top.png" width="80%" alt="Sheets InfoSheet Dialog"><br/>
-
-</details>
-</br>
-
-<a name="Estabilish_Accaunts"></a>
-<h1>📈 Estabilish Accaunts</h1>
+<a name="Компоненты"></a>
+<h1>📤 Компоненты</h1>
 <details>
 <br/><br/>
 <summary>Showcase as BottomSheet</summary>
-
-<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+<h2>🛠 Obtain Capabilities</h2><br/>
+<h2>📈 Estabilish Accaunts</h2><br/>
+<h2>💻 Deploy Container</h2><br/>
+<h2>📋 Active Scanning</h2><br/>
 </details>
 
-
-<a name="Deploy_Container"></a>
-<h1>💻 Deploy Container</h1>
-<details>
-<br/><br/>
-<summary>Showcase as BottomSheet</summary>
-
-<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
-</details>
-
-<a name="Active_Scanning"></a>
-<h1>📋 Active Scanning</h1>
-<details>
-<br/><br/>
-<summary>Showcase as BottomSheet</summary>
-
-<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
-</details>
 
 <a name="Библиотеки"></a>
 <h1>🚀 Библиотеки</h1>
@@ -75,7 +45,7 @@
 </details>
 
 <a name="Как_скачать"></a>
-<h1>🧩 Как скачать</h1>
+<h1>🧩 Как начать пользоваться</h1>
 
 
 <a name="Структура"></a>
