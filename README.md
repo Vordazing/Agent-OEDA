@@ -5,15 +5,15 @@
             OO   OO  EE       DD   DD  AAAAAAA 
              OOOO0   EEEEEEE  DDDDDD   AA   AA           
 
-> - [Функции](#Функции)
+> - [Функционал](#Функционал)
 > - [Компоненты](#Компоненты)
-> - [Библиотеки](#Библиотеки)
-> - [Как скачать](#Как_скачать)
+> - [Что используется](#Что_используется)
+> - [Как начать пользоваться](#Как_начать_пользоваться)
 > - [Структура](#Структура)
 
 
-<a name="Функции"></a>
-<h1>🛠 Функции</h1>
+<a name="Функционал"></a>
+<h1>🛠 Функционал</h1>
 <ul>
   <li>🌈 40 Colors</li>
   <li>💠 60 Shapes</li>
@@ -27,24 +27,35 @@
 <h1>📤 Компоненты</h1>
 <details>
 <br/><br/>
-<summary>Showcase as BottomSheet</summary>
-<h2>🛠 Obtain Capabilities</h2><br/>
-<h2>📈 Estabilish Accaunts</h2><br/>
-<h2>💻 Deploy Container</h2><br/>
-<h2>📋 Active Scanning</h2><br/>
+<summary><h2>🛠 Obtain Capabilities</h2></summary>
+Текст
 </details>
 
-
-<a name="Библиотеки"></a>
-<h1>🚀 Библиотеки</h1>
 <details>
 <br/><br/>
-<summary>Showcase as BottomSheet</summary>
-
-<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+<summary><h2>📈 Estabilish Accaunts</h2></summary>
+Текст
 </details>
 
-<a name="Как_скачать"></a>
+<details>
+<br/><br/>
+<summary><h2>💻 Deploy Container</h2></summary>
+Текст
+</details>
+
+<details>
+<br/><br/>
+<summary><h2>📋 Active Scanning</h2></summary>
+Текст
+</details>
+
+
+
+
+<a name="Что_используется"></a>
+<h1>🚀 Что используется</h1>
+
+<a name="Как_начать_пользоваться"></a>
 <h1>🧩 Как начать пользоваться</h1>
 
 
