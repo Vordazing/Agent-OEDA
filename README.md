@@ -27,15 +27,27 @@
 </ul>
 
 <h1>💻 Obtain Capabilities</h1>
+<div class="arrow-4">
+    <span class="arrow-4-left"></span>
+    <span class="arrow-4-right"></span>
+</div>
  <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn"></button>
   <div id="myDropdown" class="dropdown-content">
     <a href="#">Шоукейс</a>
   </div>
 </div> 
-
+<div class="l-toggle">
+  <div class="lt-content">Разворачивающийся блок</div>
+</div>
 
 <h1>📈 Deploy Container</h1>
 
 
 <h1>📋 Active Scanning</h1>
+
+
+<h1>🚀 Библиотеки</h1>
+
+
+<h1>🛸 Как установить</h1>
