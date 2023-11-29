@@ -4,17 +4,17 @@
             OO   OO  EEEEE    DD   DD  AA   AA 
             OO   OO  EE       DD   DD  AAAAAAA 
              OOOO0   EEEEEEE  DDDDDD   AA   AA           
-<div class="menu">
-	<nav>
-	   <ul>
-		<li><a href="#">Функции</a></li>
-		<li><a href="#">Obtain Capabilities</a></li>
-		<li><a href="#">Estabilish Accaunts</a></li>
-		<li><a href="#">Deploy Container</a></li>
-		<li><a href="#">Active Scanning</a></li>
-	   </ul>
-	</nav>
-</div>
+
+> - [Функции](#Функции)
+> - [Obtain Capabilities](#Obtain_Capabilities)
+> - [Estabilish Accaunts](#Estabilish_Accaunts)
+> - [Deploy Container](#Deploy_Container)
+> - [Active Scanning](#Active_Scanning)
+> - [Библиотеки](#Библиотеки)
+> - [Как скачать](#Как_скачать)
+> - [Структура](#Структура)
+
+
 
 <h1>🛠 Функции</h1>
 <ul>
@@ -27,27 +27,79 @@
 </ul>
 
 <h1>💻 Obtain Capabilities</h1>
-<div class="arrow-4">
-    <span class="arrow-4-left"></span>
-    <span class="arrow-4-right"></span>
-</div>
- <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn"></button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#">Шоукейс</a>
-  </div>
-</div> 
-<div class="l-toggle">
-  <div class="lt-content">Разворачивающийся блок</div>
-</div>
+<details open>
+<br/>
+<br/>
+<summary>Showcase as Dialog</summary>
+<img src="docs/res/InfoSheet Dialog Cover TopStyle Top.png" width="80%" alt="Sheets InfoSheet Dialog"><br/>
+
+</details>
+</br>
 
 <h1>📈 Deploy Container</h1>
+<details>
+<br/><br/>
+<summary>Showcase as BottomSheet</summary>
 
+<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+</details>
 
 <h1>📋 Active Scanning</h1>
+<details>
+<br/><br/>
+<summary>Showcase as BottomSheet</summary>
 
+<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+</details>
 
 <h1>🚀 Библиотеки</h1>
+<details>
+<br/><br/>
+<summary>Showcase as BottomSheet</summary>
+
+<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+</details>
+
+<h1>🧩 Как скачать</h1>
 
 
-<h1>🛸 Как установить</h1>
+<h1>✨ Структура</h1>
+
+```
+└── Public
+└── static
+    └── favicon
+└── src
+    ├── assets
+    │   ├── _base
+    │   ├── _general
+    │   ├── _reset
+    │   ├── _vars
+    │   └── main
+    ├── components
+    │   ├── Article_page
+    |   |   ├── MainBlog
+    |   |   ├── Post
+    |   |   ├── Share
+    |   |   └── Sidebar
+    |   ├── Main_page
+    |   |   ├── Article
+    |   |   ├── LatestPost
+    |   |   ├── MainPage
+    |   |   └── Sidebar
+    │   ├── Footer
+    │   ├── Head
+    │   ├── Header
+    │   ├── Layout
+    │   ├── Loader
+    │   ├── Mode
+    │   └── Subscribe
+    ├── Pages
+    │   ├── 404
+    │   └── Index
+    ├── Posts
+    ├── templates
+    │   └── blog
+    └── Context
+
+```
