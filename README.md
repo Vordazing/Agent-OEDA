@@ -15,7 +15,7 @@
 > - [Структура](#Структура)
 
 
-
+<a name="Функции"></a>
 <h1>🛠 Функции</h1>
 <ul>
   <li>🌈 40 Colors</li>
@@ -26,6 +26,7 @@
   <li>✍️ Customizable</li>
 </ul>
 
+<a name="Obtain_Capabilities"></a>
 <h1>💻 Obtain Capabilities</h1>
 <details open>
 <br/>
@@ -36,6 +37,17 @@
 </details>
 </br>
 
+<a name="Estabilish_Accaunts"></a>
+<h1>📈 Estabilish Accaunts</h1>
+<details>
+<br/><br/>
+<summary>Showcase as BottomSheet</summary>
+
+<img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
+</details>
+
+
+<a name="Deploy_Container"></a>
 <h1>📈 Deploy Container</h1>
 <details>
 <br/><br/>
@@ -44,6 +56,7 @@
 <img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
 </details>
 
+<a name="Active_Scanning"></a>
 <h1>📋 Active Scanning</h1>
 <details>
 <br/><br/>
@@ -52,6 +65,7 @@
 <img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
 </details>
 
+<a name="Библиотеки"></a>
 <h1>🚀 Библиотеки</h1>
 <details>
 <br/><br/>
@@ -60,9 +74,11 @@
 <img src="docs/res/OptionsSheet BottomSheet Grid Middle.png" width="80%" alt="Sheets OptionsSheet BottomSheet">
 </details>
 
+<a name="Как_скачать"></a>
 <h1>🧩 Как скачать</h1>
 
 
+<a name="Структура"></a>
 <h1>✨ Структура</h1>
 
 ```
