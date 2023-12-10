@@ -1,0 +1,31 @@
+
+mikrotik_data = {
+    'ceh': {'HOST': '10.100.99.30', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp1': {'HOST': '10.100.99.51', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp2': {'HOST': '10.100.99.52', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp3': {'HOST': '10.100.99.53', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp4': {'HOST': '10.100.99.54', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp5': {'HOST': '10.100.99.55', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'ggp6': {'HOST': '10.100.99.56', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kont1': {'HOST': '10.100.99.42', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kont2': {'HOST': '10.100.99.42', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kont3': {'HOST': '10.100.99.43', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos1': {'HOST': '10.100.99.18', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos2': {'HOST': '10.100.99.22', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos3': {'HOST': '10.100.99.23', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos4': {'HOST': '10.100.99.24', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos5': {'HOST': '10.100.99.25', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos6': {'HOST': '10.100.99.26', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos7': {'HOST': '10.100.99.27', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kos8': {'HOST': '10.100.99.28', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kusa1': {'HOST': '10.100.99.41', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'kusa2': {'HOST': '10.100.99.82', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai0': {'HOST': '10.100.99.60', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai2': {'HOST': '10.100.99.18', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai1': {'HOST': '10.100.99.61', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai3': {'HOST': '10.100.99.63', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai6': {'HOST': '10.100.99.66', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai7': {'HOST': '10.100.99.67', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'},
+    'rai8': {'HOST': '10.100.99.68', 'USERNAME': 'UMC', 'PASSWORD': 'idc-2814'}
+}
+
