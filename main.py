@@ -1,7 +1,7 @@
-import sys
-from components import check
 import os
-
+import sys
+import yaml
+from components import check
 from components import output
 
 
@@ -52,6 +52,7 @@ def settings_configuration():
         for line in config_lines:
             key, value = line.strip().split(' = ')
             config_data[key] = value
+            
         for i, (key, value) in enumerate(config_data.items(), start=1):
             print(f"({i}) {key} = {value}")
         choice = input("Select an option (1, 2, 3, 4, 5, e): --> ")
@@ -138,15 +139,18 @@ def create_configuration_file(file_name):
         return
 
     with open(file_name, 'w') as file:
-        file.write("component Obtain = False \n")
-        file.write("component Establish = False \n")
-        file.write("component Deploy = False \n")
-        file.write("component Active  = False \n")
-        file.write("ntfy_url = noy \n")
+        data = {
+            'Obtain': False,
+            'Establish': False,
+            'Deploy': False,
+            'Active': False,
+            'ntfy_url': 'noy'
+        }
+        yaml.dump(data, file, default_flow_style=False)
 
 
 def main():
-    create_configuration_file('oeda.config')
+    create_configuration_file('oeda.yaml')
     menu()
 
 

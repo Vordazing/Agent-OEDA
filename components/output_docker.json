@@ -1,0 +1,14 @@
+[
+  {
+    "c7cf7b75cbd6": {
+      "image": "gotify/server:latest",
+      "category": "new"
+    }
+  },
+  {
+    "d221200b990f": {
+      "image": "binwiederhier/ntfy",
+      "category": "new"
+    }
+  }
+]
