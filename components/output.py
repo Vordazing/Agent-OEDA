@@ -37,7 +37,7 @@ def output_user():
         print("-" * 20)
         for user in users:
             print("Username: " + str(user.split(":")[0]))
-            print("Username: " + str(user.split(":")[2]))
+            print("ID: " + str(user.split(":")[2]))
             print("-" * 20)
 
 
