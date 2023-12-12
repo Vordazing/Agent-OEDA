@@ -62,7 +62,7 @@ def settings_configuration():
         elif choice in ['1', '2', '3', '4']:
             check_function = {
                 '1': check.check_docker,
-                '2': check.check_comp2,
+                '2': check.check_user,
                 '3': check.check_comp3,
                 '4': check.check_comp4
             }.get(choice)
@@ -106,7 +106,7 @@ def interact_with_component(component_number):
         #Сюда пишем ссылку на функцию которая отвечает за вывод данных вашего компонента
         components = {
             1: output.output_docker,
-            2: output.output_comp3,
+            2: output.output_comp2,
             3: output.output_comp3,
             4: output.output_comp4
         }

@@ -1,6 +1,7 @@
 import subprocess
 import os
 import re
+from colorama import Fore, Style
 
 
 def update_ntfy_url(config_data):
@@ -52,8 +53,28 @@ def check_docker():
 
 #Ваши функции которые отвечают за проверку вашего компонента, будет ли работать или нет
 
-def check_comp2():
-    print('comp2')
+def check_user():
+    file = '/etc/passwd'
+    startLinesNum = len(open(file, 'r').readlines())
+
+    while True:
+        runLinesNum = len(open(file, 'r').readlines())
+        runLastLine = open(file, "r").readlines()[-1] #постоянный контроль конца
+        if (runLinesNum > startLinesNum): #замечено изменение
+            print("WARNING: OEDA: New user has been created: " + runLastLine.split(":")[0] + "| ID: " + runLastLine.split(":")[2])
+            confirm = str(input('WARNING: OEDA: Was that you? [Y/N]: '))
+            if (confirm.lower() == 'y'): #подтверждение изменения
+                print(Fore.GREEN + Style.BRIGHT + 'OEDA: Confirmed.' + Style.RESET_ALL)
+                startLinesNum = runLinesNum
+            elif (confirm.lower() == 'n'):
+                #функционал отбирания прав
+                os.system(f'passwd -l {runLastLine.split(":")[0]}')
+                print(Fore.RED + f'WARNING: OEDA: User {runLastLine.split(":")[0]} was locked.' + Style.RESET_ALL)
+                startLinesNum = runLinesNum
+            else: 
+                print(Style.BRIGHT + Fore.CYAN +'WARNING: OEDA: FORBIDDEN INPUT' + Style.RESET_ALL)
+                
+        del runLinesNum
 
 
 def check_comp3():
