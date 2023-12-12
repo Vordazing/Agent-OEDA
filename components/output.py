@@ -3,6 +3,7 @@ import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(current_directory, 'output_docker.json')
+userPath = "/etc/passwd" 
 
 
 def output_docker():
@@ -29,8 +30,15 @@ def output_docker():
 
 
 #Ваши функции которые отвечают за выводение информации компонента
-def output_comp2():
-    print('comp2')
+def output_user():
+    with open(userPath, 'r') as uf:
+        users = uf.readlines()
+        print("All users and their IPs")
+        print("-" * 20)
+        for user in users:
+            print("Username: " + str(user.split(":")[0]))
+            print("Username: " + str(user.split(":")[2]))
+            print("-" * 20)
 
 
 def output_comp3():

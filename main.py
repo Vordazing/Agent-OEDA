@@ -77,7 +77,7 @@ def print_white_list():
     while True:
         print("INFO:OEDA:=========== Output of components ===========")
         print("(1) Display information about component Docker")
-        print("(2) Display information about component 2")
+        print("(2) Display information about component UserCheck")
         print("(3) Display information about component 3")
         print("(4) Display information about component 4")
         print("(m) Go back to the menu")
@@ -106,7 +106,7 @@ def interact_with_component(component_number):
         #Сюда пишем ссылку на функцию которая отвечает за вывод данных вашего компонента
         components = {
             1: output.output_docker,
-            2: output.output_comp2,
+            2: output.output_user,
             3: output.output_comp3,
             4: output.output_comp4
         }
