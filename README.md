@@ -1,11 +1,7 @@
-![изображение](https://github.com/Vordazing/Agent-OEDA/assets/105577583/206a3805-9f36-4dc5-9b91-c011ef37a275)
 
-# Agent-OEDA
-             OOOOO   EEEEEEE  DDDDD      AAA   
-            OO   OO  EE       DD  DD    AAAAA  
-            OO   OO  EEEEE    DD   DD  AA   AA 
-            OO   OO  EE       DD   DD  AAAAAAA 
-             OOOOO   EEEEEEE  DDDDDD   AA   AA           
+
+# LeCont
+             ///          
 
 > - [Основные черты](#Основныечерты)
 > - [Компоненты](#Компоненты)
