@@ -145,8 +145,9 @@
     └── Context
 
 ```
+
 <h1 align="center">
   <a href="https://docusaurus.io">
-    <img width="50%" src="https://github.com/Vordazing/Agent-OEDA/blob/main/logotype.png" />
+    <img width="50%" src="https://github.com/Vordazing/Agent-OEDA/blob/main/lecont-logo.png" />
   </a>
 </h1>
