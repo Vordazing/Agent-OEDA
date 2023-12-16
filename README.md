@@ -77,7 +77,7 @@
 
 <details>
 <br/><br/>
-<summary><h2>Мониторингк</h2></summary>
+<summary><h2>Мониторинг</h2></summary>
   
 </details>
 
