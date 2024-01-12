@@ -32,7 +32,7 @@ For professionals who regularly interact with various services in the Docker con
 <h1>🚀 The main functionality</h1>
 <ul>
   <li>Container monitoring</li>
-  <li>Adding a container to the white list</li>
+  <li>Adding legitimate containers to the white list</li>
   <li>Checking installed containers by white list</li>
   <li>Deleting containers that are not in the white list</li>
 </ul>
