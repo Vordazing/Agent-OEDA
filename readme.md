@@ -67,13 +67,7 @@ https://docs.gitlab.com/runner/install/
 sudo gitlab-runner register
 ```
 
-<h3>3. Склонить проект</h3>
-
-```
-git clone https://github.com/Vordazing/LeCont/tree/main
-```
-
-<h3>4. Добавить конфиг Pipeline</h3>
+<h3>3. Добавить конфиг Pipeline</h3>
 Вставить в GitLab /Build/Pipeline Editor:
 
 ```
@@ -98,14 +92,18 @@ security:
     - oeda
 ```
 
-<h3>5. Cбилдить докер образ dind</h3>
+<h3>4. Cбилдить докер образ dind</h3>
 
 
 ```
 docker build -f Dockerfile-dind . -t oeda
 ```
 
+<h2>Склонить проект</h2>
 
+```
+git clone https://github.com/Vordazing/LeCont/tree/main
+```
 
 <h2>Установка Agent</h2></summary>
 
