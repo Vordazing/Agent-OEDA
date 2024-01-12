@@ -1,0 +1,13 @@
+version: '3.7'
+ services:
+  api:
+    build: .
+    restart: always
+    ports:
+      - 8000:8000
+  crdb:
+    image: cockroachdb/cockroach:v19.2.2
+    ports:
+      - "26257:26257"
+      - "8080:8080"
+    command: start-single-node --insecure
