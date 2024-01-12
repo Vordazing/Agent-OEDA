@@ -111,7 +111,7 @@ docker build -f Dockerfile-dind . -t oeda
  `
  /LeCont/tree/main/cmd/agent
  `
-<li> Также скачать Dockerfile по пути:</li>
+<li> Cкачать Dockerfile по пути:</li>
 
 `
 /LeCont/blob/main/Dockerfile
@@ -163,7 +163,7 @@ docker compose -up --build
  `
  /LeCont/tree/main/cmd/client
  `
-<li> Также скачать Dockerfile по пути:</li>
+<li> Cкачать Dockerfile по пути:</li>
 
 `
 /LeCont/blob/main/Dockerfile
