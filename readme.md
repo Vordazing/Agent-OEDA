@@ -101,15 +101,22 @@ docker compose -up --build
 ```
 
 <h2>Установка Client</h2></summary>
+<li> Скачать папку из cmd по пути:</li>
+ 
+ `
+ /LeCont/tree/main/cmd/client
+ `
+<li> Также скачать Dockerfile по пути:</li>
+
+`
+/LeCont/blob/main/Dockerfile
+`
+<li> После скачивания нужно открыть файл docker-compose-client.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
+<li> Выполнить команду:</li>
 
 ```
 docker compose -f docker-compose-client.yaml up --build
 ```
-
-
-
-
-
 
 
 <a name="Системные_требования_продукта"></a>
