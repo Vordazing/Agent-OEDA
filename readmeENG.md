@@ -90,55 +90,29 @@ stage:
 build script:
 - oeda
 ```
-<h3>4. Download and up the docker image of dind</h3>
-<li>Download along the way:</li>
+<h3>4. Up the docker image of dind</h3>
 
-`
-/LeCont/blob object/main/Dockerfile
-`
-<li>Up:</li>
 
 ```
 build docker -f Dockerfile-find . -t oeda
 ```
 
+<h2>Clone the project</h2>
 
+```
+git clone https://github.com/Vordazing/LeCont/tree/main
+```
 
 <h2>Agent Installation</h2></short description>
-<li> Download a folder from the command line along the way:</li>
 
-`
-/LeCont/tree/home/cmd/agent
-`
-<li> Download Dockerfile along the way:</li>
-
-`
-/LeCont/blob/main/Dockerfile
-`
-After downloading, you need to disable the docker-compose-agent.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip address on which this server will be blocked</li>
+Open the docker-compose-agent.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip address on which this server will be blocked</li>
 <li> Run the command:</li>
 
 ```
 docker compose -f docker-compose-agent.yaml up --build
 ```
 <h2>Server installation</h2></summary>
-<li> Download the folder from cmd along the way:</li>
-
-`
-/LeCount/tree/main/intermediate
-`
-<li> Download the intermediate folder along the way:</li>
-
-`
-/LeCont/tree/home/cmd/server
-`
-
-<li> Download Dockerfile along the way:</li>
-
-`
-/LeCont/blob/main/docker-compose.yaml
-`
-After downloading, you need to disable docker-compose-agent.yaml and change portals to those that are not available on your server</li>
+Open docker-compose-agent.yaml and change portals to those that are not available on your server</li>
 
 ```
 ports:
@@ -157,18 +131,7 @@ docker -up layout --build
 ```
 
 <h2>Client installation</h2></short description>
-<li> Download the folder from the command line along the way:</li>
-
-`
-/LeCont/tree/home/cmd/client
-`
-<li> Download Dockerfile along the way:</li>
-
-`
-/LeCont/blob/main/Dockerfile
-`
-<li> After downloading, you need to open the docker-compose-client.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip-address on which this server will be run</li>
-<li> Run the command:</li>
+Open the docker-compose-client.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip-address on which this server will be run</li><li> Run the command:</li>
 
 ```
 docker compose -f docker-compose-client.yaml up --build
