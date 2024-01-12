@@ -44,7 +44,7 @@ For professionals who regularly interact with various services in the Docker con
 <li>Server - loads the database where the white sheet will be stored; it is desirable to install the server folder on a separate server (where the white sheet will be stored).</li>
 <li>Client - the client required for exporting converged containers</li>
 
-<h2>Preview in the pipeline</h2>
+<h2>📄Preview in the Pipeline</h2>
 
 <h3>1. Add using GitLab</h3>
 
