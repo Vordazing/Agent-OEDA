@@ -92,12 +92,12 @@ security:
     - oeda
 ```
 <h3>4. Скачать и сбилдить докер образ dind</h3>
-Скачать  по пути:
+<li>Скачать  по пути:</li>
 
 `
 /LeCont/blob/main/Dockerfile
 `
-Сбилдить:
+<li>Сбилдить:</li>
 
 ```
 docker build -f Dockerfile-dind . -t oeda
