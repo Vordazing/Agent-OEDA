@@ -95,6 +95,23 @@ security:
 docker compose -f docker-compose-agent.yaml up --build
 ```
 <h2>Установка Server</h2></summary>
+<li> Скачать папку из cmd по пути:</li>
+ 
+ `
+ /LeCont/tree/main/cmd/server
+ `
+<li> Также скачать Dockerfile по пути:</li>
+
+`
+/LeCont/blob/main/docker-compose.yaml
+`
+<li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить порты на доступные на вашем сервере</li>
+
+`
+ ports:
+      - 8000:8000
+`
+<li> Выполнить команду:</li>
 
 ```
 docker compose -up --build
