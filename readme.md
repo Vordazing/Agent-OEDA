@@ -44,7 +44,38 @@
 <li>Agent - сервис, который отвечает, чтобы ненужный контейнер не запустился на production сервисе, если этого контейнера нет в white листе.</li>
 <li>Server - запускает базу данных, где будет храниться white лист; папку сервер желательно установить на отдельном сервере (где будет храниться white лист).</li>
 <li>Client - клиент необходимый для экспорта сбилженных контейнеров</li>
-  
+
+<h2>Сценарий использования в pipeline</h2>
+1) Сбилдить докер образ dind
+
+```
+docker build -f Dockerfile-dind .
+```
+
+2) Пример использования в pipeline
+
+```
+default:
+  image: miron2801/dind:oeda 
+  services:
+    - miron2801/dind:oeda 
+  before_script:
+    - docker info
+
+variables:
+
+  DOCKER_TLS_CERTDIR: "/certs"
+
+build:
+  stage: build
+  script:
+    - docker pull nginx
+security:
+  stage: build
+  script:
+    - oeda
+```
+
 <h2>Установка Agent</h2></summary>
 
 ```
@@ -61,7 +92,7 @@ docker compose -up --build
 ```
 docker compose -f docker-compose-client.yaml up --build
 ```
-  
+
 
 
 
