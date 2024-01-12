@@ -55,7 +55,7 @@ For professionals who regularly interact with various services in the Docker con
 
 <h3>2. Add GitLab Runner</h3>
 
-<lithium>Installing Gitlab Runner: Follow the official instructions for your operating system, which can be found on the Gitlab Runner installation page
+<lithium>Installing Gitlab Runner: follow the official instructions for your operating system, which can be found on the Gitlab Runner installation page
 
 `
 https://docs.gitlab.com/runner/install/
@@ -66,7 +66,7 @@ https://docs.gitlab.com/runner/install/
 sudo gitlab-Runner registration
 ```
 
-<h3>3. Add a pipeline with a feed</h3>
+<h3>3. Add a Pipeline with a feed</h3>
 Install in GitLab /Build/Pipeline Editor:
 
 ```
@@ -90,13 +90,13 @@ stage:
 build script:
 - oeda
 ```
-<h3>4. Download and knock down the docker image of dind</h3>
+<h3>4. Download and up the docker image of dind</h3>
 <li>Download along the way:</li>
 
 `
 /LeCont/blob object/main/Dockerfile
 `
-<li>Knock down:</li>
+<li>Up:</li>
 
 ```
 build docker -f Dockerfile-find . -t oeda
@@ -125,7 +125,7 @@ docker compose -f docker-compose-agent.yaml up --build
 <li> Download the folder from cmd along the path:</li>
 
 `
-/lecount/tree/main/intermediate
+/LeCount/tree/main/intermediate
 `
 <li> Download the intermediate folder along the path:</li>
 
