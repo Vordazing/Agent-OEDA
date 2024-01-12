@@ -30,7 +30,7 @@
 Для специалистов, которые регулярно взаимодействуют с различными сервисами в среде контейнеров Docker.
 
 <a name="Основной_функционал_продукта"></a>
-<h1>![](https://github.com/bastndev/GitHub_Emoji.gif/blob/main/assets/gif/fr.gif) Основной функционал)</h1>
+![](https://github.com/bastndev/GitHub_Emoji.gif/blob/main/assets/gif/fr.gif) <h1>Основной функционал)</h1>
 <ul>
   <li>Мониторинг контейнеров</li>
   <li>Добавление в white листы контейнера</li>
