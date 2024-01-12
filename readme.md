@@ -91,13 +91,8 @@ security:
   script:
     - oeda
 ```
-<h3>4. Скачать и сбилдить докер образ dind</h3>
-<li>Скачать  по пути:</li>
+<h3>4. Cбилдить докер образ dind</h3>
 
-`
-/LeCont/blob/main/Dockerfile
-`
-<li>Сбилдить:</li>
 
 ```
 docker build -f Dockerfile-dind . -t oeda
@@ -106,40 +101,16 @@ docker build -f Dockerfile-dind . -t oeda
 
 
 <h2>Установка Agent</h2></summary>
-<li> Скачать папку из cmd по пути:</li>
- 
- `
- /LeCont/tree/main/cmd/agent
- `
-<li> Cкачать Dockerfile по пути:</li>
 
-`
-/LeCont/blob/main/Dockerfile
-`
-<li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
+<li> Открыть файл docker-compose-agent.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
 <li> Выполнить команду:</li>
 
 ```
 docker compose -f docker-compose-agent.yaml up --build
 ```
 <h2>Установка Server</h2></summary>
-<li> Скачать папку из cmd по пути:</li>
- 
- `
- /LeCont/tree/main/intermal
- `
-<li> Скачать папку intermal по пути:</li>
- 
- `
- /LeCont/tree/main/cmd/server
- `
- 
-<li> Скачать Dockerfile по пути:</li>
 
-`
-/LeCont/blob/main/docker-compose.yaml
-`
-<li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить порты на доступные на вашем сервере</li>
+<li> Открыть файл docker-compose-agent.yaml и изменить порты на доступные на вашем сервере</li>
 
 ```
  ports:
@@ -158,17 +129,8 @@ docker compose -up --build
 ```
 
 <h2>Установка Client</h2></summary>
-<li> Скачать папку из cmd по пути:</li>
- 
- `
- /LeCont/tree/main/cmd/client
- `
-<li> Cкачать Dockerfile по пути:</li>
 
-`
-/LeCont/blob/main/Dockerfile
-`
-<li> После скачивания нужно открыть файл docker-compose-client.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
+<li> Открыть файл docker-compose-client.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
 <li> Выполнить команду:</li>
 
 ```
