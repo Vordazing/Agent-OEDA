@@ -1,13 +1,11 @@
-version: '3.7'
- services:
-  api:
-    build: .
+services:
+  client:
+    build: 
+      context: .
+      args:
+        - service=agent
     restart: always
-    ports:
-      - 8000:8000
-  crdb:
-    image: cockroachdb/cockroach:v19.2.2
-    ports:
-      - "26257:26257"
-      - "8080:8080"
-    command: start-single-node --insecure
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - SERVER_IP=10.10.124.53
