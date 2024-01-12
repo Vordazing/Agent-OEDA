@@ -56,7 +56,7 @@
 
 <h3>2. Поднять GitLab Runner</h3>
 
-<li>Установка GitLab Runner: следуйте официальным инструкциям для вашей операционной системы, которые можно найти на странице установки GitLab Runner:</li>
+<li>Установка GitLab Runner: следуйте официальным инструкциям для вашей операционной системы, которые можно найти на странице установки GitLab Runner</li>
 
 `
 https://docs.gitlab.com/runner/install/
@@ -71,7 +71,7 @@ sudo gitlab-runner register
 ```
 sudo gitlab-runner start
 ```
-<h3>3. Пример использования в pipeline</h3>
+<h3>3. Пример использования в /Build/Pipeline Editor</h3>
 
 ```
 default:
