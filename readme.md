@@ -107,10 +107,16 @@ docker compose -f docker-compose-agent.yaml up --build
 `
 <li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить порты на доступные на вашем сервере</li>
 
-`
+```
  ports:
       - 8000:8000
-`
+```
+
+```
+ ports:
+      - "26257:26257"
+      - "8080:8080"
+```
 <li> Выполнить команду:</li>
 
 ```
