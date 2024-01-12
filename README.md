@@ -63,7 +63,7 @@ docker-compose up
 <ul>
   <li>Docker</li>
   <li>1 CPU</li>
-  <li>25 ГБ RAW</li>
+  <li>25G hdd/ssd</li>
   <li>1 ОЗУ</li>
   <li>Linux</li>
 </ul>
