@@ -49,16 +49,16 @@
 1) Сбилдить докер образ dind
 
 ```
-docker build -f Dockerfile-dind .
+docker build -f Dockerfile-dind . -t oeda
 ```
 
 2) Пример использования в pipeline
 
 ```
 default:
-  image: miron2801/dind:oeda 
+  image: oeda 
   services:
-    - miron2801/dind:oeda 
+    - oeda 
   before_script:
     - docker info
 
