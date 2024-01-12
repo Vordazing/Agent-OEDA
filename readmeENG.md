@@ -156,7 +156,7 @@ ports:
 docker -up layout --build
 ```
 
-<h2>Client registration</h2></short description>
+<h2>Client installation</h2></short description>
 <li> Download the folder from the command line along the way:</li>
 
 `
