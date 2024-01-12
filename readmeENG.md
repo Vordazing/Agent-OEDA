@@ -42,7 +42,7 @@ For professionals who regularly interact with various services in the Docker con
 <h2> ♻ Installing and configuring services</h2></summary>
 <li>The agent is a server who responds that a small container has not been launched for the production of servers, that container is not in the white sheet.</li>
 <li>Server - loads the database where the white sheet will be stored; it is desirable to install the server folder on a separate server (where the white sheet will be stored).</li>
-<li>A client is a client that has no analogues for sharing containers</li>
+<li>Client - the client required for exporting converged containers</li>
 
 <h2>Preview in the pipeline</h2>
 
