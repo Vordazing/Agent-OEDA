@@ -78,7 +78,7 @@ security:
 
 
 <h2>Установка Agent</h2></summary>
-<li> Скачать файлы из папки cmd по пути: /LeCont/tree/main/cmd/agent</li>
+<li> Скачать папку из cmd по пути: /LeCont/tree/main/cmd/agent</li>
 <li> Также скачать Dockerfile</li>
 <li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
 <li> Выполнить команду:</li>
