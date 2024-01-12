@@ -13,8 +13,6 @@ This service will check the validity of the containers that are in the white lis
 > - [Instructions](#Инструкции)
 > - [System requirements](#Системные_требования_продукта)
 
-Russian version: https://github.com/Vordazing/LeCont/blob/main/README.md
-
 <a name="Основныечерты"></a>
 <h1>📌 The main features</h1>
 <ul>
