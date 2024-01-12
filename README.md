@@ -64,11 +64,6 @@
   <li>Linux</li>
 </ul>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=vordaz&show_icons=true&locale=en" alt="vordaz" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=vordaz&" alt="vordaz" /></p>
-
-
 
 <h1 align="center">
   <a href="https://docusaurus.io">
