@@ -71,7 +71,14 @@ sudo gitlab-runner register
 ```
 sudo gitlab-runner start
 ```
-<h3>3. Пример использования в /Build/Pipeline Editor</h3>
+
+<h3>3. Сбилдить докер образ dind</h3>
+
+```
+docker build -f Dockerfile-dind . -t oeda
+```
+
+<h2>Пример использования в /Build/Pipeline Editor</h2>
 
 ```
 default:
@@ -93,12 +100,6 @@ security:
   stage: build
   script:
     - oeda
-```
-
-<h3>4. Сбилдить докер образ dind</h3>
-
-```
-docker build -f Dockerfile-dind . -t oeda
 ```
 
 <h2>Установка Agent</h2></summary>
