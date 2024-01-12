@@ -40,12 +40,13 @@
 <details>
 <br/><br/>
 <summary><h2>Инструкция пользования для администратора</h2></summary> 
-  <details>
+  
+</details>
+<details>
 <br/><br/>
-<summary><h2>💬 Как развернуть внешний сервер с white листом</h1>
-clone
-docker-compose up</h2></summary> 
-  <details>
+<summary><h2>💬 Как развернуть внешний сервер с white листом</h2></summary> 
+<li>clone</li>
+<li>docker-compose up</li>
 </details>
 
 
