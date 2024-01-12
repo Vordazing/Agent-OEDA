@@ -126,9 +126,15 @@ docker compose -f docker-compose-agent.yaml up --build
 <li> Скачать папку из cmd по пути:</li>
  
  `
+ /LeCont/tree/main/intermal
+ `
+<li> Скачать папку intermal по пути:</li>
+ 
+ `
  /LeCont/tree/main/cmd/server
  `
-<li> Также скачать Dockerfile по пути:</li>
+ 
+<li> Скачать Dockerfile по пути:</li>
 
 `
 /LeCont/blob/main/docker-compose.yaml
