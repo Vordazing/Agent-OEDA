@@ -52,7 +52,7 @@
 git clone https://github.com/Vordazing/LeCont/tree/main
 ```
   
-<li>Далее необходимо поднять контейнер с помощью команды:</li>
+<li>Далее необходимо поднять сервис с помощью команды:</li>
 
 ```bash
 docker-compose up
