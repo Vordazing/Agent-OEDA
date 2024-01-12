@@ -71,7 +71,7 @@ sudo gitlab-runner register
 ```
 sudo gitlab-runner start
 ```
-<h3>3. Пример конфига для Pipeline по пути /Build/Pipeline Editor</h3>
+<h3>3. Добавить конфиг Pipeline в GitLab /Build/Pipeline Editor</h3>
 
 ```
 default:
