@@ -46,12 +46,9 @@
 <li>Client - клиент необходимый для экспорта сбилженных контейнеров</li>
 
 <h2>Сценарий использования в pipeline</h2>
-1. Сбилдить докер образ dind
-
-```
-docker build -f Dockerfile-dind . -t oeda
-```
-2. Пример использования в pipeline
+1. Понять свой GitLab
+2. Поднять GitLab Runner
+3. Пример использования в pipeline
 
 ```
 default:
@@ -75,7 +72,11 @@ security:
     - oeda
 ```
 
+4. Сбилдить докер образ dind
 
+```
+docker build -f Dockerfile-dind . -t oeda
+```
 
 <h2>Установка Agent</h2></summary>
 <li> Скачать папку из cmd по пути:</li>
