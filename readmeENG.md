@@ -105,7 +105,7 @@ build docker -f Dockerfile-find . -t oeda
 
 
 <h2>Agent Installation</h2></short description>
-<li> Download a folder from the command line along the path:</li>
+<li> Download a folder from the command line along the way:</li>
 
 `
 /LeCont/tree/home/cmd/agent
@@ -116,18 +116,18 @@ build docker -f Dockerfile-find . -t oeda
 /LeCont/blob/main/Dockerfile
 `
 After downloading, you need to disable the docker-compose-agent.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip address on which this server will be blocked</li>
-<li> Fill out the form:</li>
+<li> Run the command:</li>
 
 ```
 docker compose -f docker-compose-agent.yaml up --build
 ```
 <h2>Server installation</h2></summary>
-<li> Download the folder from cmd along the path:</li>
+<li> Download the folder from cmd along the way:</li>
 
 `
 /LeCount/tree/main/intermediate
 `
-<li> Download the intermediate folder along the path:</li>
+<li> Download the intermediate folder along the way:</li>
 
 `
 /LeCont/tree/home/cmd/server
@@ -150,14 +150,14 @@ ports:
 - "26257:26257"
 - "8080:8080"
 ```
-<li> Add a comment:</li>
+<li> Run the command:</li>
 
 ```
 docker -up layout --build
 ```
 
 <h2>Client registration</h2></short description>
-<li> Download the folder from the command line along the path:</li>
+<li> Download the folder from the command line along the way:</li>
 
 `
 /LeCont/tree/home/cmd/client
@@ -167,8 +167,8 @@ docker -up layout --build
 `
 /LeCont/blob/main/Dockerfile
 `
-<li> After downloading, you need to open the docker-compose client.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip address on which this server will be blocked</li>
-<li> Fill out the form:</li>
+<li> After downloading, you need to open the docker-compose-client.yaml and change the string - SERVER_IP=x.x.x.x, where x.x.x.x.x is your local ip-address on which this server will be run</li>
+<li> Run the command:</li>
 
 ```
 docker compose -f docker-compose-client.yaml up --build
