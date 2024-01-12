@@ -66,12 +66,9 @@ https://docs.gitlab.com/runner/install/
 ```
 sudo gitlab-runner register
 ```
-<li>Убедитесь, что GitLab Runner запущен и работает</li>
 
-```
-sudo gitlab-runner start
-```
-<h3>3. Добавить конфиг Pipeline в GitLab /Build/Pipeline Editor</h3>
+<h3>3. Добавить конфиг Pipeline</h3>
+Вставить в GitLab /Build/Pipeline Editor:
 
 ```
 default:
