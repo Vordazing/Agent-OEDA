@@ -91,8 +91,13 @@ security:
   script:
     - oeda
 ```
+<h3>4. Скачать докер образ dind по пути:</h3>
 
-<h3>4. Сбилдить докер образ dind</h3>
+`
+/LeCont/blob/main/Dockerfile
+`
+
+<h3>5. Сбилдить докер образ dind</h3>
 
 ```
 docker build -f Dockerfile-dind . -t oeda
