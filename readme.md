@@ -75,7 +75,13 @@ security:
     - oeda
 ```
 
+
+
 <h2>Установка Agent</h2></summary>
+<li> Скачать файлы из папки cmd</li>
+<li> Также скачать docker файл</li>
+<li> После скачивания нужно открыть файл docker-compose-agent.yaml и изменить строчку - SERVER_IP=x.x.x.x, где x.x.x.x - ваш локальный ip-адрес, на котором будет запущен данный сервис</li>
+<li> Выполнить команду:</li>
 
 ```
 docker compose -f docker-compose-agent.yaml up --build
