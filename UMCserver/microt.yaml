@@ -1,0 +1,166 @@
+connect: &common
+  HOST: 0.0.0.0
+  USERNAME: UMC
+  PASSWORD: idc-2814
+  dopHOST: 0.0.0.0
+
+ceh: &ceh
+  <<: *common
+  HOST: 10.100.52.1
+  dopHOST: 10.100.53.0
+
+ggp1: &ggp1
+  <<: *common
+  HOST: 10.100.4.1
+  dopHOST: 10.100.5.0
+
+ggp2: &ggp2
+  <<: *common
+  HOST: 10.100.8.1
+  dopHOST: 10.100.9.0
+
+ggp3: &ggp3
+  <<: *common
+  HOST: 10.100.10.1
+  dopHOST: 10.100.11.0
+
+ggp4: &ggp4
+  <<: *common
+  HOST: 10.100.14.1
+  dopHOST: 10.100.15.0
+
+ggp5: &ggp5
+  <<: *common
+  HOST: 10.100.16.1
+  dopHOST: 10.100.17.0
+
+ggp6: &ggp6
+  <<: *common
+  HOST: 10.100.48.1
+  dopHOST: 10.100.49.0
+
+ggp7: &ggp7
+  <<: *common
+  HOST: 10.100.64.1
+  dopHOST: 10.100.65.0
+
+ggp8: &ggp8
+  <<: *common
+  HOST: 10.100.68.1
+  dopHOST: 10.100.69.0
+
+ggp9: &ggp9
+  <<: *common
+  HOST: 10.100.70.1
+  dopHOST: 10.100.71.0
+
+kont1: &kont1
+  <<: *common
+  HOST: 10.100.60.1
+  dopHOST: 10.100.61.0
+
+kont2: &kont2
+  <<: *common
+  HOST: 10.0.32.1
+  dopHOST: 10.0.33.0
+
+kont3: &kont3
+  <<: *common
+  HOST: 10.100.62.1
+  dopHOST: 10.100.63.0
+
+kos1: &kos1
+  <<: *common
+  HOST: 10.100.42.1
+  dopHOST: 10.100.43.0
+
+kos2: &kos2
+  <<: *common
+  HOST: 10.100.34.1
+  dopHOST: 10.100.35.0
+
+kos3: &kos3
+  <<: *common
+  HOST: 10.100.56.1
+  dopHOST: 10.100.57.0
+
+kos4: &kos4
+  <<: *common
+  HOST: 10.100.30.1
+  dopHOST: 10.100.31.0
+
+kos5: &kos5
+  <<: *common
+  HOST: 10.100.32.1
+  dopHOST: 10.100.33.0
+
+kos6: &kos6
+  <<: *common
+  HOST: 10.100.38.1
+  dopHOST: 10.100.39.0
+
+kos7: &kos7
+  <<: *common
+  HOST: 10.100.36.1
+  dopHOST: 10.100.37.0
+
+kos8: &kos8
+  <<: *common
+  HOST: 10.100.40.1
+  dopHOST: 10.100.41.0
+
+kusa1: &kusa1
+  <<: *common
+  HOST: 10.100.12.1
+  dopHOST: 10.100.13.0
+
+kusa2: &kusa2
+  <<: *common
+  HOST: 10.100.50.1
+  dopHOST: 10.100.51.0
+
+rai0: &rai0
+  <<: *common
+  HOST: 10.100.44.1
+  dopHOST: 10.100.45.0
+  dopHOST2: 10.100.46.0
+
+rai1: &rai1
+  <<: *common
+  HOST: 10.100.20.1
+  dopHOST: 10.100.21.0
+
+rai2: &rai2
+  <<: *common
+  HOST: 10.100.18.1
+  dopHOST: 10.100.19.0
+
+rai3: &rai3
+  <<: *common
+  HOST: 10.100.22.1
+  dopHOST: 10.100.23.0
+
+rai5: &rai5
+  <<: *common
+  HOST: 10.100.26.1
+  dopHOST: 10.100.27.0
+
+rai6: &rai6
+  <<: *common
+  HOST: 10.100.28.1
+  dopHOST: 10.100.29.0
+
+rai7: &rai7
+  <<: *common
+  HOST: 10.100.54.1
+  dopHOST: 10.100.55.0
+
+rai8: &rai8
+  <<: *common
+  HOST: 10.100.58.1
+  dopHOST: 10.100.59.0
+
+rai9: &rai9
+  <<: *common
+  HOST: 10.100.66.1
+  dopHOST: 10.100.67.0

@@ -3,6 +3,9 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import requests
 import connectiondb as db
+import search
+
+
 app = FastAPI()
 
 
@@ -15,9 +18,10 @@ class Message(BaseModel):
 def send_ip_to_telegram(message: Message):
     telegram_bot_token = "6155412112:AAHf07zUQi5dJC0y2MpyjbedqQwkRRUErtU"
     url = f"https://api.telegram.org/bot{telegram_bot_token}/sendMessage"
+    text = f'{message.text}\n Объект: {search.find_network(message.text)}'
     params = {
         'chat_id': message.chat_id,
-        'text': message.text,
+        'text': text,
     }
     response = requests.post(url, data=params)
     if response.status_code != 200:
