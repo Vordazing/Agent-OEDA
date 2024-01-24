@@ -18,7 +18,10 @@ class Message(BaseModel):
 def send_ip_to_telegram(message: Message):
     telegram_bot_token = "6155412112:AAHf07zUQi5dJC0y2MpyjbedqQwkRRUErtU"
     url = f"https://api.telegram.org/bot{telegram_bot_token}/sendMessage"
-    text = f'IP: {message.text}\nОбъект: {search.find_network(message.text)}\n{"_" * 20}\n'
+    ip = message.text
+    object = search.find_network(message.text)
+    mac = search.find_microtik(object=object, ip=ip)
+    text = f'IP: {ip}\nОбъект: {object}\nMAC: {mac}\n{"_" * 20}\n'
     params = {
         'chat_id': message.chat_id,
         'text': text,

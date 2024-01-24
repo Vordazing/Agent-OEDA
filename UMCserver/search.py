@@ -1,5 +1,6 @@
 import ipaddress
 import yaml
+import routeros_api
 
 
 def find_network(ip):
@@ -26,3 +27,17 @@ def find_network(ip):
     return None
 
 
+def find_microtik(object, ip):
+    with open('microt.yaml', 'r') as file:
+        data = yaml.safe_load(file)
+    for key, value in data.items():
+        if key == object:
+            host_data = value
+            api_pool = routeros_api.RouterOsApiPool(host_data.get('HOST'), username=host_data.get('USERNAME'), password=host_data.get('PASSWORD'), plaintext_login=True)
+            api = api_pool.get_api()
+            leases = api.get_resource('/ip/dhcp-server/lease').get(address=ip)
+            if leases:
+                mac_address = leases[0]['mac-address']
+                return mac_address
+            else:
+                return None
