@@ -3,7 +3,7 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 import requests
 import connectiondb as db
-import search
+import search, miner
 
 
 app = FastAPI()
@@ -21,7 +21,14 @@ def send_ip_to_telegram(message: Message):
     ip = message.text
     object = search.find_network(message.text)
     mac = search.find_microtik(object=object, ip=ip)
-    text = f'IP: {ip}\nОбъект: {object}\nMAC: {mac}\n{"_" * 20}\n'
+    data_list = miner.get_device_info(ip)
+    if data_list is not None:
+        model = data_list[0]
+        worker = data_list[1]
+    else:
+        model, worker = None, None
+
+    text = f'IP: {ip}\nОбъект: {object}\nMAC: {mac}\nМодель: {model}\nВоркер: {worker}\n{"_" * 20}\n'
     params = {
         'chat_id': message.chat_id,
         'text': text,
