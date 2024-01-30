@@ -54,6 +54,3 @@ def get_device_info(ip):
         return None
 
 
-a = get_device_info('10.100.42.235')
-print(a[0])
-

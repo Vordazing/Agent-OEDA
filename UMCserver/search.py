@@ -41,3 +41,6 @@ def find_microtik(object, ip):
                 return mac_address
             else:
                 return None
+
+a = find_microtik(object='Aша 1', ip='10.200.1.207')
+print(a)
