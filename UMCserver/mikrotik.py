@@ -131,22 +131,41 @@ def process():
                     for entry in lease_data:
                         address = entry.get('address', '')
                         mac_address = entry.get('mac-address', '')
+                        host = entry.get('host-name', '')
 
-                        if mac_address is not None:
+                        if mac_address is not None and host is not None:
                             entry_info = {
                                 "Object": device_name,
                                 "IP Address": address,
-                                "MAC Address": mac_address
+                                "MAC Address": mac_address,
+                                "HOST": host
+                            }
+                            all_entry_info.append(entry_info)
+                        elif mac_address is not None:
+                            entry_info = {
+                                "Object": device_name,
+                                "IP Address": address,
+                                "MAC Address": mac_address,
+                                "HOST": None
+                            }
+                            all_entry_info.append(entry_info)
+                        elif host is not None:
+                            entry_info = {
+                                "Object": device_name,
+                                "IP Address": address,
+                                "MAC Address": None,
+                                "HOST": host
                             }
                             all_entry_info.append(entry_info)
                         else:
                             entry_info = {
                                 "Object": device_name,
                                 "IP Address": address,
-                                "MAC Address": None
+                                "MAC Address": None,
+                                "HOST": None
                             }
-
                             all_entry_info.append(entry_info)
+
 
                 except Exception as e:
                     print(f"Error processing {device_name}: {e}")
@@ -161,7 +180,7 @@ info = process()
 simple_list = []
 
 for entry in info:
-    simple_entry = [entry["Object"], entry["IP Address"], entry["MAC Address"]]
+    simple_entry = [entry["Object"], entry["IP Address"], entry["MAC Address"], entry["HOST"]]
     simple_list.append(simple_entry)
 
 def write_data_to_sheet():
@@ -187,7 +206,7 @@ def start():
     spreadsheet = gc.open_by_key(spreadsheet_id)
     worksheet_name = 'Общая'
     worksheet = spreadsheet.worksheet(worksheet_name)
-    cells_to_clear = worksheet.range('A2:C' + str(worksheet.row_count))
+    cells_to_clear = worksheet.range('A2:D' + str(worksheet.row_count))
     for cell in cells_to_clear:
         cell.value = ''
     worksheet.update_cells(cells_to_clear)
@@ -196,5 +215,6 @@ def start():
 
 
 start()
+
 
 
